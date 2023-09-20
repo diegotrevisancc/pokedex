@@ -14,7 +14,7 @@ interface Pokemon {
   
   export async function getStaticProps() {
   
-    const maxNumberOfPokemons = 500;
+    const maxNumberOfPokemons = 386;
     const api = 'https://pokeapi.co/api/v2/pokemon';
   
     const res = await fetch(`${api}/?limit=${maxNumberOfPokemons}`)
